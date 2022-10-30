@@ -308,7 +308,7 @@ body{
     text-align: center;
     width: 42px;
     height: 42px;
-    background-image: url('/image/green\ ellipse.svg');
+    background-image: url('../image/green\ ellipse.svg');
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
