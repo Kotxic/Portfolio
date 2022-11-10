@@ -29,6 +29,22 @@ ul{
 img{
     max-width: 100%;
 }
+.btn:hover{
+    background-color: #CC9933;
+    color: #FFFFFF;
+}
+.btn:focus{
+    color: #FFFFFF;
+    background-color: #CC9933;
+}
+.btn:active{
+    background-color: #CC9933;
+    color: #FFFFFF;
+}
+
+/*heading*/
+
+
 .heading{
     margin-top: 0;
     margin-bottom: 20px;
@@ -48,20 +64,29 @@ img{
 .header{
     padding-top: 30px;
 }
-.header-logo-contain{
+.header__logo__contain{
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
 }
-.header-logo-contain-right{
+.header__logo__contain__right{
     display: flex;
     align-items: center;
 }
-.header-logo-contain-left{
+.header__logo__contain__left{
     display: flex;
     align-items: center;
 }
-.section-contacts-link{
+.header__logo__contain__right__link:hover{
+    color: #CC9933;
+}
+.header__logo__contain__right__link:focus{
+    color: #CC9933;
+}
+.header__logo__contain__right__link:active{
+    color: #A47312;
+}
+.header__logo__contain__right__link{
     margin-left: 40px;
     font-family: 'Muller';
     font-style: normal;
@@ -70,7 +95,16 @@ img{
     line-height: 20px;
     color: #666;
 }
-.header-link-lich{
+.header__logo__contain__left__link:hover{
+    color: #F0BF5F;
+}
+.header__logo__contain__left__link:focus{
+    color: #CC9933;
+}
+.header__logo__contain__left__link:active{
+    color: #A47312;
+}
+.header__logo__contain__left__link{
     margin-left: 7px;
     font-family: 'Muller';
     font-style: normal;
@@ -86,18 +120,27 @@ img{
     border: 0px solid red;
     border-radius: 15px;
 }
-.nav-right-list{
+.nav__right__list{
     display: flex;
     margin-left: 40px;
 }
-.nav-right-list-item:not(:last-child){
+.nav__right__list__item:not(:last-child){
     margin-right: 40px;
 }
-.nav-right-list-item{
+.nav__right__list__item{
     margin-top: 27px;
     margin-bottom: 27px;
 }
-.nav-list-link{
+.nav__right__list__item__link:hover{
+    color: #CC9933;
+}
+.nav__right__list__item__link:focus{
+    color: #CC9933;
+}
+.nav__right__list__item__link:active{
+    color: #A47312;
+}
+.nav__right__list__item__link{
     font-family: 'Muller';
     font-style: normal;
     font-weight: 400;
@@ -105,7 +148,7 @@ img{
     line-height: 16px;
     color: #666;
 }
-.nav-left{
+.nav__left{
     display: flex;
     align-items: center;
 }
@@ -121,14 +164,18 @@ img{
     border-radius: 15px;
     color: #CC9933;
 }
+
+
 /*special offers*/
-.section-offers{
+
+
+.offers{
     margin-top: 70px;
 }
-.section-offers-ofers{
+.offers__content{
     display: flex;
 }
-.offer1{
+.offers__content__right__offer1{
     background-image: url('../img/Rectangle\ 14.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -143,10 +190,10 @@ img{
     width: 573px;
     height: 258px;
 }
-.section-offers-offer-info{
+.offers__info{
     padding: 40px 108px 40px 45px;
 }
-.offers-heading{
+.offers__info__heading{
     margin-top: 0;
     margin-bottom: 0;
     max-width: 420px;
@@ -157,7 +204,7 @@ img{
     line-height: 40px;
     color: #FFFFFF;
 }
-.offers-prise{
+.offers__info__prise{
     margin-top: 15px;
     margin-bottom: 47px;
     font-family: 'Muller';
@@ -168,7 +215,7 @@ img{
     color:#FFFFFF;
     opacity: 0.8;
 }
-.offers-link{
+.offers__info__links__link{
     font-family: 'Muller';
     font-style: normal;
     font-weight: 400;
@@ -176,24 +223,24 @@ img{
     line-height: 16px;
     color: #CC9933;
 }
-.offers-link-img{
+.offers__info__links__link-img{
     margin-top: 47px;
 }
-.offers-link-all{
+.offers__info__links{
     display: flex;
     align-items: center;
 }
-.section-offers-left{
+.offers__left{
     margin-left: 24px;
     background-image: url('../img/33\ 1.jpg');
     background-repeat: no-repeat;
     height: 573px;
     width: 540px;
 }
-.section-offers-offer-left{
+.offers__content__left{
     padding: 212px 229px 40px 45px;
 }
-.offers-heading-left{
+.offers__info__heading-left{
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'Muller';
@@ -203,7 +250,7 @@ img{
     line-height: 60px;
     color: #FFFFFF;
 }
-.offers-prise-left{
+.offers__info__prise-left{
     margin-top: 15px;
     font-family: 'Muller';
     font-style: normal;
@@ -213,7 +260,7 @@ img{
     color: #FFFFFF;
     opacity: 0.8;
 }
-.offers-link-left{
+.offers__info__links__link-left{
     font-family: 'Muller';
     font-style: normal;
     font-weight: 400;
@@ -224,7 +271,7 @@ img{
 .about{
     margin-top: 70px;
 }
-.about-info{
+.about__info{
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'Muller';
@@ -234,35 +281,39 @@ img{
     line-height: 200%;
     color: #000000;
 }
-.about-info-container{
+.about__container{
     max-width: 888px;
 }
+
+
 /*services*/
+
+
 .services{
     margin-top: 70px;
 }
-.services-content{
+.services__content{
     display: flex;
     justify-content: space-between;
 
     flex-wrap: wrap;
 }
-.services-content-item{
+.services__content__item{
     max-width: 573px;
     background-color: white;
     border: 0px solid red;
     border-radius: 15px;
 }
-.services-content-item:nth-child(n+3){
+.services__content__item:nth-child(n+3){
     margin-top: 24px;
 }
-.services-content-link{
+.services__content__link{
     margin-top: 26px;
     margin-left: 45px;
     display: flex;
     align-items: center;
 }
-.services-content-link-text{
+.services__content__link__text{
     margin-right: 5px;
     font-family: 'Muller';
     font-style: normal;
@@ -271,7 +322,7 @@ img{
     line-height: 200%;
     color:#CC9933;
 }
-.services-content-text{
+.services__content__text{
     margin-top: 0;
     margin-left: 45px;
     margin-bottom: 35px;
@@ -282,16 +333,20 @@ img{
     font-size: 16px;
     line-height: 200%;
 }
+
+
 /*benefits*/
+
+
 .benefits{
     margin-top: 70px;
 }
-.benefits-content{
+.benefits__content{
     display: flex;
     flex-wrap: wrap;
 
 }
-.benefits-content-item{
+.benefits__content__item{
     width: 276px;
     height: 276px;
     padding-left: 40px;
@@ -302,13 +357,13 @@ img{
     border-radius: 15px;
     background-color: white;
 }
-.benefits-content-item:not(:nth-child(4n)){
+.benefits__content__item:not(:nth-child(4n)){
     margin-right: 22px;
 }
-.benefits-content-item:nth-child(n+5){
+.benefits__content__item:nth-child(n+5){
     margin-top:22px;
 }
-.benefits-content-text{
+.benefits__content__item__text{
     margin: 0;
     margin-top: 10px;
     max-width: 189px;
@@ -320,56 +375,59 @@ img{
     line-height: 200%;
 }
 
+
 /*accommadation*/
+
+
 .accommodation{
     margin-top: 70px;
 }
-.accommodation-content{
+.accommodation__content{
     display: flex;
     flex-wrap: wrap;
 }
-.acomodation-content-item{
+.accommodation__content__item{
     background-color: white;
     border: 0px solid red;
     border-radius: 15px;
 }
-.acomodation-content-item:not(:nth-child(3n)){
+.accommodation__content__item:not(:nth-child(3n)){
     margin-right: 24px;
 }
-.acomodation-content-item:nth-child(n+4){
+.accommodation__content__item:nth-child(n+4){
     margin-top: 24px;
 }
-.accomadation-content-prise{
+.accommodation__content__prise{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.accomadation-content-prise-info{
+.accommodation__content__prise__info{
     display: flex;
 }
-.accomodation-content-info{
+.accommodation__content__info{
     margin-top: 32px;
     padding-left: 45px;
     padding-right: 45px;
     padding-bottom: 45px;
 }
-.accomadation-content-star{
+.accommodation__content__star{
     display: inline-block;
 	font-size: 0;
 }
-.accomadation-content-star span{
+.accommodation__content__star span{
     padding: 0;
 	font-size: 20px;
 	line-height: 1;
 	color: lightgrey;
 }
-.accomadation-content-star > span::before{
+.accommodation__content__star > span::before{
     content: '★';
 }
-.accomadation-content-star > span.accomadation-content-star-active{
+.accommodation__content__star > span.accommodation__content__star__active{
     color: gold;
 }
-.accommadation-content-description{
+.accommodation__content__description{
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'Muller';
@@ -379,7 +437,7 @@ img{
     line-height: 16px;
     color: #999999;
 }
-.accommadation-content-text-prise{
+.accommodation__content__text__prise{
     margin-top: 0;
     margin-right: 4px;
     margin-left: 4px;
@@ -391,7 +449,7 @@ img{
     line-height: 20px;
 
 }
-.accomadation-content-text{
+.accommodation__content__text{
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'Muller';
@@ -400,26 +458,26 @@ img{
     font-size: 16px;
     line-height: 16px;
 }
-.accomadation-content-text-margin{
+.accommodation__content__text__margin{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.accommadation-content-description-margin{
+.accommodation__content__description__margin{
     margin-bottom: 33px;
 }
 
-.accomatadion-content-link-conteiner{
+.accomatadion__content__link__conteiner{
     background-image: url('../img/41.png');
     background-repeat: no-repeat;
     width:374px;
     height: 440px;
 }
-.accommadation-content-link-info{
+.accommadation__content__link__info{
     display: flex;
     align-items: center;
     padding: 373px 70px 27px 70px;
 }
-.accommodation-content-link{
+.accommodation__content__link{
     font-family: 'Muller';
     font-style: normal;
     font-weight: 500;
@@ -427,21 +485,25 @@ img{
     line-height: 200%;
     color: white;
 }
+
+
 /*contacts*/
+
+
 .contacts{
     margin-top: 70px;
 }
-.contacts-content{
+.contacts__content{
     display: flex;
     background-color: white;
     padding: 45px;
     border: 0px solid red;
     border-radius: 15px;
 }
-.contacts-content-info-item{
+.contacts__content__info__item{
     display: flex;
 }
-.contacts-info-main{
+.contacts__info__main{
     margin-left: 47px;
     padding-top: 25px;
     padding-bottom: 23px;
@@ -450,7 +512,7 @@ img{
     flex-flow: column wrap;
     border-bottom: 1px solid #E9E9E9;
 }
-.contacts-info-heading{
+.contacts__info__heading{
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 25px;
@@ -461,7 +523,7 @@ img{
     font-size: 20px;
     line-height: 20px;
 }
-.contacts-info-text{
+.contacts__info__text{
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'Muller';
@@ -470,7 +532,7 @@ img{
     font-size: 16px;
     line-height: 150%;
 }
-.contacts-info-tel{
+.contacts__info__tel{
     font-family: 'Muller';
     font-style: normal;
     font-weight: 400;
@@ -478,7 +540,7 @@ img{
     line-height: 150%;
     color: #CC9933;
 }
-.contacts-info-mail{
+.contacts__info__mail{
     font-family: 'Muller';
     font-style: normal;
     font-weight: 400;
@@ -494,7 +556,7 @@ img{
     line-height: 150%;
     color: #999999;
 }
-.contacts-info-text{
+.contacts__info__text{
     max-width: 218px;
     font-family: 'Muller';
     font-style: normal;
@@ -506,75 +568,13 @@ img{
 .btn-info{
     margin-top: 60px;
 }
-.contacts-content-img{
+.contacts__content__img{
     margin-left: 52px;
 }
 
-/* footer*/
-/* .footer{
-    margin-top: 70px;
-}
-.footer-content{
-    background-color: #333333;
-    border: 0px solid red;
-    border-radius: 15px;
-}
-.footer-main-content{
-    padding: 45px;
-    display: flex;
-    background-image: url('../img/Слой\ 1.svg');
-    background-position: 739px 115px;
-    background-repeat: no-repeat;
-}
-.copyright{
-    width: 302px;
-    margin-right: 125px;
 
-}
-.footer-content-contacts{
-    margin-right: 269px;
-}
-.footer-text{
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: 'Muller';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 190%;
-    color: #FFFFFF;
-}
-.footer-link{
-    font-family: 'Muller';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #CC9933;
-}
-.copyright-info{
-    margin-top: 37px;
-}
-.copyright-link{
-    margin-top: 40px;
-}
-.footer-contacts-tel{
-    margin-top: 15px;
-    display: flex;
-    flex-flow: column;
-}
-.footer-contacts-mail{
-    margin-top: 15px;
-    display: flex;
-    flex-flow: column;
-}
-.footer-content-social{
-    display: flex;
-    flex-flow: column;
-}
-.footer-social-link:not(:last-child){
-    margin-bottom: 20px;
-} */
+/* footer*/ 
+
 
 .footer__container {
     position: relative;
