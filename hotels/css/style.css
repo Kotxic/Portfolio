@@ -149,6 +149,7 @@ img{
 }
 .header__logo__contain__left__link:hover{
     color: #F0BF5F;
+    cursor:pointer;
 }
 .header__logo__contain__left__link:focus{
     color: #CC9933;
