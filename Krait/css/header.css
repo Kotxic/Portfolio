@@ -1,0 +1,317 @@
+
+/*header*/
+
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.header__container{
+    max-width: 1300px;
+    margin: 0px auto;
+    display: flex;
+    padding: 0px 30px ;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+}
+.header__logo{
+    background-image: url('/img/logo.png');
+    background-repeat: no-repeat;
+    height: 55px;
+    width: 185px;
+}
+.header__menu_left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.location__svg{
+    transition: 0.7s;
+}
+.location{
+    cursor:pointer;
+}
+.menu_left__location:hover .location__svg{
+    transition: 0.7s;
+    opacity: 0.5;
+}
+.location{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-right: 50px;
+    text-align: center;
+    border: none;
+
+}
+.menu_left__tel{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #303030;
+}
+.contact__svg{
+    transition: 0.7s;
+}
+.menu_left__contact:hover .contact__svg{
+    transition: 0.7s;
+    opacity: 0.5;
+}
+.headr__menu_rigth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_right__entry{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+.entry__entry{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    transition: 0.7s;
+    color: #303030;
+}
+.entry__entry:hover{
+    transition: 0.7s;
+    opacity: 0.5;
+}
+.entry__text{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.entry__reg{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    transition: 0.7s;
+    color: #303030;
+}
+.entry__reg:hover{
+    transition: 0.7s;
+    opacity: 0.5;
+}
+.header__menu{
+    display: none;
+}
+.menu__icon{
+    display: none;
+}
+.menu_rigth__icon{
+    display: flex;
+}
+.icon__chosen{
+    display: block;
+    margin-right: 22px;
+    height: 16px;
+    width: 16px;
+    padding: 8px;
+}
+.chosen__svg{
+    height: 16px;
+    width: 16px;
+}
+.icon__chosen:hover{
+    background-color: #F8F8F8;
+}
+.icon__chosen:active{
+    background-color: #E8E7E7;
+}
+.icon__chosen__text{
+    position: absolute;
+    background-color: #E46942;
+    padding: 2px;
+    border-radius: 50%;
+}
+.icon__statistic{
+    margin-right: 22px;
+    display: block;
+    height: 20px;
+    width: 20px;
+    padding: 6px;
+}
+.icon__statistic:hover{
+    background-color: #F8F8F8;
+}
+.icon__statistic:active{
+    background-color: #E8E7E7;
+}
+.icon__bag{
+    display: block;
+    height: 16px;
+    width: 16px;
+    padding: 8px;
+}
+.icon__bag:hover{
+    background-color: #F8F8F8;
+}
+.icon__bag:active{
+    background-color: #E8E7E7;
+}
+.search__txt{
+    display: none;
+    font-family: 'Prata', serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    color: #303030;
+}
+.navigation__bottons{
+    display: none;
+}
+.menu__icon_active{
+    position: fixed;
+}
+@media (min-width: 767px){
+    .menu__list{
+        display: flex;
+        align-items: center;
+
+    }
+    .menu__link > li{
+        padding: 10px 0px;
+    }
+}
+@media (max-width: 1100px){
+    .menu_left__location{
+        display: none;
+    }
+    .menu_left__contact{
+        display: none;
+    }
+    .header__menu{
+        display: block;
+    }
+    .headr__menu_rigth{
+        display: none;
+    }
+    .menu__icon{
+        z-index: 31;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+    }
+    .menu__icon span,
+    .menu__icon::before,
+    .menu__icon::after{
+        left: 0;
+        position:absolute;
+        height: 15%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #303030;
+    }
+    .menu__icon::after,
+    .menu__icon::before{
+        content: "";
+    }
+    .menu__icon::before{
+        top: 0;
+    }
+    .menu__icon::after{
+        bottom: 0;
+    }
+    .menu__icon span{
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+    .navigation__content{
+        z-index: 30;
+        position: fixed;
+        top: 0;
+        left: 220%;
+        width: 100%;
+        height: 100%;
+        background-color: #F8F8F8   ;
+        padding: 35px 15px 15px 30px;
+        transition: left 0.3s ease 0s;
+        overflow: auto;
+    }
+    .navigation__content._active{
+        left: 50%;
+    }
+    .navigation__content{
+        flex-direction: column-reverse;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .search-box svg{
+        display: none;
+    }
+    .search-box{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: 100px;
+    }
+    .search__txt{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .search__text{
+        height: 40px;
+        width: 300px;
+        font-size: 20px;
+        margin-left: 0;
+        border: 2px solid #303030;
+        background-color: #fff;
+    }
+    .nav__list{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .nav__item:not(:first-child){
+        margin-top: 25px;
+    }
+    .nav__link{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .navigation__bottons{
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation__button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        height: 60px;
+        width: 300px;
+    
+        background-color: #303030;
+        color: #fff;
+        border: 1px solid #303030;
+    }
+    .navigation__button:not(:first-child){
+        margin-top: 20px;
+    }
+}
+@media (max-width:600px){
+    .navigation__content._active{
+        left: 20%;
+    }
+}
+@media (max-width:400px){
+    .navigation__content._active{
+        left: 0%;
+    }
+}
+body._lock{
+    overflow: hidden;
+}

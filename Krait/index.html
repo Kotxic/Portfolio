@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&family=Prata&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!--header-->
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__menu_left">
+                <div class="menu_left__location">
+                    <svg class="location__svg" xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" fill="none">
+                        <path d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40213 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z" fill="#303030"/>
+                    </svg>
+                    <select name="locatiom" class="location">
+                        <option value="Piter"> Санкт-Петербург</option>
+                        <option value="Samara"> Самара</option>
+                        <option value="Moscow"> Москва</option>
+                    </select>
+                </div>
+                <div class="menu_left__contact">
+                    <svg class="contact__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M15.5645 11.7424L13.3317 9.50954C12.5342 8.71209 11.1786 9.0311 10.8596 10.0678C10.6203 10.7855 9.8229 11.1842 9.1052 11.0247C7.51031 10.626 5.3572 8.5526 4.95848 6.87797C4.71925 6.16024 5.19771 5.36279 5.91542 5.12359C6.9521 4.80461 7.27107 3.44895 6.47363 2.65151L4.24078 0.418659C3.60282 -0.139553 2.64589 -0.139553 2.08768 0.418659L0.57253 1.93381C-0.942617 3.5287 0.732019 7.75516 4.48001 11.5032C8.22801 15.2511 12.4545 17.0056 14.0494 15.4106L15.5645 13.8955C16.1228 13.2575 16.1228 12.3006 15.5645 11.7424Z" fill="#303030"/>
+                    </svg>
+                    <a href="tel:+78007852535" class="menu_left__tel"> 8 800 785-25-35</a>
+                </div>
+            </div>
+            <a href="" class="header__logo"></a>
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+
+            <div class="headr__menu_rigth">
+                <div class="menu_right__entry">
+                    <a href="#" class="entry__entry"> Вход</a>
+                    <p class="text entry__text"> | </p>
+                    <a href="#" class="entry__reg">Регистрация</a>
+                </div>
+                <div class="menu_rigth__icon">
+                    <a href="#" class="icon__chosen"> <svg class="chosen__svg" xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                        <path d="M8.99998 15.5C8.46248 15.0233 7.85498 14.5275 7.21248 14H7.20415C4.94165 12.15 2.37748 10.0566 1.24498 7.54829C0.87291 6.74973 0.675732 5.8809 0.666635 4.99996C0.664151 3.7912 1.14895 2.63245 2.01149 1.7856C2.87402 0.938751 4.04147 0.475289 5.24998 0.49996C6.23384 0.501514 7.19651 0.785861 8.02331 1.31913C8.38662 1.55493 8.71533 1.84017 8.99998 2.16663C9.28622 1.84145 9.61502 1.55638 9.97748 1.31913C10.8039 0.785756 11.7664 0.501392 12.75 0.49996C13.9585 0.475289 15.1259 0.938751 15.9885 1.7856C16.851 2.63245 17.3358 3.7912 17.3333 4.99996C17.3248 5.88231 17.1276 6.75262 16.755 7.55246C15.6225 10.0608 13.0591 12.1533 10.7966 14L10.7883 14.0066C10.145 14.5308 9.53831 15.0266 9.00081 15.5066L8.99998 15.5ZM5.24998 2.16663C4.47374 2.15691 3.72504 2.454 3.16665 2.99329C2.62863 3.52176 2.32794 4.24583 2.33324 4.99996C2.34275 5.64204 2.48817 6.27484 2.75998 6.85663C3.29457 7.93888 4.0159 8.91834 4.89081 9.74996C5.71665 10.5833 6.66665 11.39 7.48831 12.0683C7.71581 12.2558 7.94748 12.445 8.17915 12.6341L8.32498 12.7533C8.54748 12.935 8.77748 13.1233 8.99998 13.3083L9.01081 13.2983L9.01581 13.2941H9.02081L9.02831 13.2883H9.03248H9.03664L9.05165 13.2758L9.08581 13.2483L9.09165 13.2433L9.10081 13.2366H9.10581L9.11331 13.23L9.66665 12.7758L9.81165 12.6566C10.0458 12.4658 10.2775 12.2766 10.505 12.0891C11.3266 11.4108 12.2775 10.605 13.1033 9.76746C13.9783 8.93626 14.6997 7.95705 15.2341 6.87496C15.5109 6.28813 15.6584 5.64871 15.6667 4.99996C15.6701 4.24816 15.3696 3.52687 14.8333 2.99996C14.276 2.45823 13.5272 2.1587 12.75 2.16663C11.8016 2.15857 10.8949 2.5561 10.2583 3.25913L8.99998 4.70913L7.74165 3.25913C7.10503 2.5561 6.19838 2.15857 5.24998 2.16663Z" fill="#303030"/>
+                        </svg>
+                       <!-- <p class="icon__chosen__text">23</p>-->
+                    </a>
+                    <a href="#" class="icon__statistic"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <line x1="5.1" y1="10" x2="5.1" y2="17" stroke="#303030" stroke-width="2.2"/>
+                        <line x1="10.1" y1="2" x2="10.1" y2="17" stroke="#303030" stroke-width="2.2"/>
+                        <line x1="15.1" y1="5" x2="15.1" y2="17" stroke="#303030" stroke-width="2.2"/>
+                        </svg></a>
+                    <a href="#" class="icon__bag"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" fill="none">
+                        <rect x="2" y="5" width="16" height="13" rx="1" fill="white"/>
+                        <mask id="path-2-inside-1_473_17" fill="white">
+                        <rect x="2" y="5" width="16" height="13" rx="1"/>
+                        </mask>
+                        <rect x="2" y="5" width="16" height="13" rx="1" stroke="#303030" stroke-width="3.2" mask="url(#path-2-inside-1_473_17)"/>
+                        <path d="M6 9L6 6C6 3.79086 7.79086 2 10 2V2C12.2091 2 14 3.79086 14 6L14 9" stroke="#303030" stroke-width="1.6"/>
+                        </svg></a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--navigation-->
+
+    <section class="navigation">
+        <div class="container">
+            <div class="navigation__content">
+                <div class="navigation__bottons">
+                    <div class="navigation__button"> <a class="navigation__button__item">Вход</a></div>
+                    <div class="navigation__button"> <a class="navigation__button__item">Регистрация</a></div>
+                </div>
+                <nav class="navigation__nav">
+                    
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">КАТАЛОГ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">АКЦИИ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">БРЕНДЫ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">МАГАЗИНЫ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">О НАС</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">ДОСТАВКА И ОПЛАТА</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">СТАТЬИ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search-box">
+                    <p class="search__txt">Search</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2 8.5C13.2 11.0957 11.0957 13.2 8.5 13.2C5.90426 13.2 3.8 11.0957 3.8 8.5C3.8 5.90426 5.90426 3.8 8.5 3.8C11.0957 3.8 13.2 5.90426 13.2 8.5ZM12.062 13.938C11.039 14.6094 9.81512 15 8.5 15C4.91015 15 2 12.0899 2 8.5C2 4.91015 4.91015 2 8.5 2C12.0899 2 15 4.91015 15 8.5C15 10.1561 14.3806 11.6676 13.3609 12.8153L17.2728 16.7272L16 18L12 14L12.062 13.938Z" fill="#303030"/>
+                        </svg>
+                    <input class="search__text" type="text" name="" placeholder="Поиск по сайту">
+                    <a href="#" class="search-btn"></a>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <!--baner-->
+
+    <section class="baner">
+        <div class="container">
+            <div class="baner__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide baner__slide">
+                        <div class="baner__content">
+                            <img class="baner__svg" src="img/Union.svg">
+                            <div class="baner__info">
+                                <p class="baner__text text">Суперскидка до 60%</p>
+                                <h1 class="baner__hiading1 hiading1">НА БРИЛЛИАНТЫ</h1>
+                                <a href="#" class="baner__btn btn"> Подробнее</a>
+                            </div>
+                            <div class="baner__image">
+                                <img class="baner__img" src="img/pngegg 1.png">
+                            </div>
+                        </div>
+                    <div class="swiper-button-next banner_next"></div>
+                    <div class="swiper-button-prev banner_prev"></div>
+                    </div>
+                    <div class="swiper-slide baner__slide">
+                        <div class="baner__content">
+                            <img class="baner__svg" src="img/Union.svg">
+                            <div class="baner__info">
+                                <p class="baner__text text">Суперскидка до 40%</p>
+                                <h1 class="baner__hiading1 hiading1">НА БРИЛЛИАНТЫ</h1>
+                                <a href="#" class="baner__btn btn"> Подробнее</a>
+                            </div>
+                            <div class="baner__image">
+                                <img class="baner__img" src="img/pngegg 1.png">
+                            </div>
+                        </div>
+                    <div class="swiper-button-next banner_next"></div>
+                    <div class="swiper-button-prev banner_prev"></div>
+                    </div>
+                    <div class="swiper-slide baner__slide">
+                        <div class="baner__content">
+                            <img class="baner__svg" src="img/Union.svg">
+                            <div class="baner__info">
+                                <p class="baner__text text">Суперскидка до 50%</p>
+                                <h1 class="baner__hiading1 hiading1">НА БРИЛЛИАНТЫ</h1>
+                                <a href="#" class="baner__btn btn"> Подробнее</a>
+                            </div>
+                            <div class="baner__image">
+                                <img class="baner__img" src="img/pngegg 1.png">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next banner_next"></div>
+                        <div class="swiper-button-prev banner_prev"></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--Popular-->
+    <section class="popular">
+        <div class="container">
+            <h2 class="hiading2 popular__hiading2"> Популярные категории</h2>
+            <div class="popular__content">
+                <a href="#" class="popular__card">
+                    <img class="popular__img" src="img/pngegg (1) 4.png">
+                    <p class="popular__text text"> Кольца</p>
+                </a>
+               <a href="#" class="popular__card">
+                    <img class="popular__img" src="img/pngegg (2) 4.png">
+                    <p class="popular__text text"> Серьги</p>
+               </a>
+                <a href="#" class="popular__card">
+                    <img class="popular__img" src="img/pngegg (3) 4.png">
+                    <p class="popular__text text"> Помолвочные кольца</p>
+                </a>
+                <a href="#" class="popular__card">
+                    <img class="popular__img" src="img/pngegg (4) 4.png">
+                    <p class="popular__text text"> Браслеты</p>
+                </a>
+                <a href="#" class="popular__card">
+                    <img class="popular__img" src="img/pngegg (5) 4.png">
+                    <p class="popular__text text"> Колье и подвески</p>
+                </a>
+                <a href="#" class="popular__card">
+                    <img class="popular__img" src="img/pngegg (6) 4.png">
+                    <p class="popular__text text"> Часы</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--sale-->
+
+    <section class="sale">
+        <div class="container">
+            <h2 class="sale__hiading2 hiading2">Распродажа</h2>
+            <div class="sale__navigation">
+                <div class="sale__bottons">
+                    <button class="sale__botton sale__botton_active">Кольца</button>
+                    <button class="sale__botton">Серьги</button>
+                    <button class="sale__botton">Браслеты</button>
+                    <button class="sale__botton">Часы</button>
+                </div>
+                <div class="sale__slider_navigation">
+                    <div class="swiper-button-prev sale_prev"></div>
+                    <div class="swiper-button-next sale_next"></div>
+                   
+                </div>
+            </div>
+            <div class="sale__slider swiper">
+                <div class="swiper-wrapper swiper__wrapper">
+                    <div class="swiper-slide sale__slide">
+                        <div class="sale__content">
+                            <p class="sale__sale_icon">Sale</p>
+                            <div class="sale__icon">
+                                <img class="sale__favorit" src="img/coolicon.svg">
+                                <img class="sale__look" src="img/glaz.svg">
+                            </div>
+                            <div class="sale__slaiderImage1 swiper sale__slaiderImage">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slaiderImage__slaid1">
+                                        <img class="slaiderImage__image" src="img/rign1.png">
+                                    </div>
+                                    <div class="swiper-slide slaiderImage__slaid1">
+                                        <img class="slaiderImage__image" src="img/ring 3.png">
+                                    </div>
+                                    <div class="swiper-slide slaiderImage__slaid1">
+                                        <img class="slaiderImage__image" src="img/ring 4 .png">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination slaiderImage__pagination1"></div>    
+                            </div>
+                            <div class="sale__info">
+                                <div class="sale__price">
+                                    <div class="sale__price__all">
+                                        <p class="sale__price__now">41 000 ₽</p>
+                                        <p class="sale__price__old">65 000 ₽</p>
+                                    </div>
+                                    <p class="sale__price__discount">-45%</p>
+                                </div>
+                                <p class="sale__text" >Стильное кольцо из белого золота c бриллиантами</p>
+                            </div>
+                            <div class="sale__input">
+                                <select name="color" class="sale__color">
+                                    <option value="White"> Белое золото</option>
+                                    <option value="Yellow"> Желтое золото</option>
+                                    <option value="Serebro"> Серебро</option>
+                                </select>
+                                <select name="size" class="sale__size">
+                                    <option value="size16"> Размер: 16</option>
+                                    <option value="size18">Размер: 18</option>
+                                    <option value="size20"> Размер: 20</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide sale__slide">
+                        <div class="sale__content">
+                            <p class="sale__sale_icon">Sale</p>
+                            <div class="sale__icon">
+                                <img class="sale__favorit" src="img/coolicon.svg">
+                                <img class="sale__look" src="img/glaz.svg">
+                            </div>
+                            <div class="sale__slaiderImage2 swiper sale__slaiderImage">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slaiderImage__slaid2">
+                                        <img class="slaiderImage__image" src="img/ring 2.png">
+                                    </div>
+                                    <div class="swiper-slide slaiderImage__slaid2">
+                                        <img class="slaiderImage__image" src="img/ring 3.png">
+                                    </div>
+                                    <div class="swiper-slide slaiderImage__slaid2">
+                                        <img class="slaiderImage__image" src="img/rign1.png">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination slaiderImage__pagination2"></div>    
+                            </div>
+                            <div class="sale__info">
+                                <div class="sale__price">
+                                    <div class="sale__price__all">
+                                        <p class="sale__price__now">41 000 ₽</p>
+                                        <p class="sale__price__old">65 000 ₽</p>
+                                    </div>
+                                    <p class="sale__price__discount">-45%</p>
+                                </div>
+                                <p class="sale__text" >Стильное кольцо из белого золота c бриллиантами</p>
+                            </div>
+                            <div class="sale__input">
+                                <select name="color" class="sale__color">
+                                    <option value="White"> Белое золото</option>
+                                    <option value="Yellow"> Желтое золото</option>
+                                    <option value="Serebro"> Серебро</option>
+                                </select>
+                                <select name="size" class="sale__size">
+                                    <option value="size16"> Размер: 16</option>
+                                    <option value="size18">Размер: 18</option>
+                                    <option value="size20"> Размер: 20</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide sale__slide">
+                        <div class="sale__content">
+                            <p class="sale__sale_icon">Sale</p>
+                            <div class="sale__icon">
+                                <img class="sale__favorit" src="img/coolicon.svg">
+                                <img class="sale__look" src="img/glaz.svg">
+                            </div>
+                            <div class="sale__slaiderImage3 swiper sale__slaiderImage">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slaiderImage__slaid3">
+                                        <img class="slaiderImage__image" src="img/ring 3.png">
+                                    </div>
+                                    <div class="swiper-slide slaiderImage__slaid3">
+                                        <img class="slaiderImage__image" src="img/ring 4 .png">
+                                    </div>
+                                    <div class="swiper-slide slaiderImage__slaid3">
+                                        <img class="slaiderImage__image" src="img/ring 2.png">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination slaiderImage__pagination3"></div>    
+                            </div>
+                            <div class="sale__info">
+                                <div class="sale__price">
+                                    <div class="sale__price__all">
+                                        <p class="sale__price__now">41 000 ₽</p>
+                                        <p class="sale__price__old">65 000 ₽</p>
+                                    </div>
+                                    <p class="sale__price__discount">-45%</p>
+                                </div>
+                                <p class="sale__text" >Стильное кольцо из белого золота c бриллиантами</p>
+                            </div>
+                            <div class="sale__input">
+                                <select name="color" class="sale__color">
+                                    <option value="White"> Белое золото</option>
+                                    <option value="Yellow"> Желтое золото</option>
+                                    <option value="Serebro"> Серебро</option>
+                                </select>
+                                <select name="size" class="sale__size">
+                                    <option value="size16"> Размер: 16</option>
+                                    <option value="size18">Размер: 18</option>
+                                    <option value="size20"> Размер: 20</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide sale__slide">
+                        <div class="sale__content">
+                            <p class="sale__sale_icon">Sale</p>
+                            <div class="sale__icon">
+                                <img class="sale__favorit" src="img/coolicon.svg">
+                                <img class="sale__look" src="img/glaz.svg">
+                            </div>
+                            <div class="sale__slaiderImage4 swiper sale__slaiderImage">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slaiderImage__slaid4">
+                                        <img class="slaiderImage__image" src="img/ring 4 .png">
+                                    </div>
+                                    <div class="swiper-slide slaiderImage__slaid4">
+                                        <img class="slaiderImage__image" src="img/ring 2.png">
+                                    </div>
+                                    <div class="swiper-slide slaiderImage__slaid4">
+                                        <img class="slaiderImage__image" src="img/rign1.png">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination slaiderImage__pagination4"></div>    
+                            </div>
+                            <div class="sale__info">
+                                <div class="sale__price">
+                                    <div class="sale__price__all">
+                                        <p class="sale__price__now">41 000 ₽</p>
+                                        <p class="sale__price__old">65 000 ₽</p>
+                                    </div>
+                                    <p class="sale__price__discount">-45%</p>
+                                </div>
+                                <p class="sale__text" >Стильное кольцо из белого золота c бриллиантами</p>
+                            </div>
+                            <div class="sale__input">
+                                <select name="color" class="sale__color">
+                                    <option value="White"> Белое золото</option>
+                                    <option value="Yellow"> Желтое золото</option>
+                                    <option value="Serebro"> Серебро</option>
+                                </select>
+                                <select name="size" class="sale__size">
+                                    <option value="size16"> Размер: 16</option>
+                                    <option value="size18">Размер: 18</option>
+                                    <option value="size20"> Размер: 20</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide sale__slide">
+                        <div class="sale__content">
+                            <p class="sale__sale_icon">Sale</p>
+                            <div class="sale__icon">
+                                <img class="sale__favorit" src="img/coolicon.svg">
+                                <img class="sale__look" src="img/glaz.svg">
+                            </div>
+                            <div class="sale__slaiderImage5 swiper sale__slaiderImage">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slaiderImage__slaid5">
+                                        <img class="slaiderImage__image" src="img/rign1.png">
+                                    </div>
+                                    <div class="swiper-slide slaiderImage__slaid5">
+                                        <img class="slaiderImage__image" src="img/ring 3.png">
+                                    </div>
+                                    <div class="swiper-slide slaiderImage__slaid5">
+                                        <img class="slaiderImage__image" src="img/ring 4 .png">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination slaiderImage__pagination5"></div>    
+                            </div>
+                            <div class="sale__info">
+                                <div class="sale__price">
+                                    <div class="sale__price__all">
+                                        <p class="sale__price__now">41 000 ₽</p>
+                                        <p class="sale__price__old">65 000 ₽</p>
+                                    </div>
+                                    <p class="sale__price__discount">-45%</p>
+                                </div>
+                                <p class="sale__text" >Стильное кольцо из белого золота c бриллиантами</p>
+                            </div>
+                            <div class="sale__input">
+                                <select name="color" class="sale__color">
+                                    <option value="White"> Белое золото</option>
+                                    <option value="Yellow"> Желтое золото</option>
+                                    <option value="Serebro"> Серебро</option>
+                                </select>
+                                <select name="size" class="sale__size">
+                                    <option value="size16"> Размер: 16</option>
+                                    <option value="size18">Размер: 18</option>
+                                    <option value="size20"> Размер: 20</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <!--discount-->
+
+    <section class="discount">
+        <div class="container">
+            <div class="discount__content">
+                <div class="discount__cart">
+                    <img class="discount__svg" src="img/Union_smal.svg">
+                    <div class="discount__info">
+                        <p class="discount__text">Скидки на все украшения с бриллиантами</p>
+                        <div class="discount__discount discount__discount1">
+                            <p class="discount__discount__text1">ДО</p>
+                            <p class="discount__discount__text2">-50%</p>
+                        </div>
+                    </div>
+                    <div class="discount__image">
+                        <img class="discount__img" src="img/pngegg 2.png">
+                    </div>
+                </div>
+                <div class="discount__cart">
+                    <img class="discount__svg" src="img/Union_smal.svg">
+                    <div class="discount__info">
+                       
+                        <p class="discount__text">Скидкина </br> кольца и браслеты</p>
+                        <div class="discount__discount discount__discount2">
+                            <p class="discount__discount__text1">ДО</p>
+                            <p class="discount__discount__text2">-40%</p>
+                        </div>
+                    </div>
+                    <div class="discount__image">
+                        <img class="discount__img" src="img/pngegg (1) 5.png">
+                    </div>
+                </div>
+                <div class="discount__cart">
+                    <img class="discount__svg" src="img/Union_smal.svg">
+                    <div class="discount__info">
+                        <p class="discount__text">снижение цен  на обручальные кольца</p>
+                        <div class="discount__discount discount__discount3">
+                            <p class="discount__discount__text1">ДО</p>
+                            <p class="discount__discount__text2">-60%</p>
+                        </div>
+                    </div>
+                    <div class="discount__image">
+                        <img class="discount__img" src="img/pngegg (3) 5.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--dayProduct-->
+
+    <section class="dayProduct">
+        <div class="container">
+            <div class="dayProduct__hiading">
+                <h2 class="dayProduct__hiading2 hiading2"> Товар дня</h2>
+                <div class="dayProduct__navigation">
+                    <div class="swiper-button-prev dayProduct__prev"></div>
+                    <div class="swiper-button-next dayProduct__next"></div>
+                </div>
+            </div>
+            <div class="swiper dayProduct__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide dayProduct__slide">
+                        <div class="dayProduct__left">
+                            <div class="dayProduct__icon">
+                                <p class="dayProduct__new">New</p>
+                                <p class="dayProduct__hit">Хит</p>
+                                <p class="dayProduct__sale__icon">Sale</p>
+                            </div>
+                            <div class="dayProduct__imagesSlider swiper dayProduct__imagesSlider1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide dayProduct__imagesSleder__slide">
+                                        <img class="dayProduct__img" src="img/04EDA19C9767F7100CFFDE5D049E 1.png">
+                                    </div>
+                                    <div class="swiper-slide dayProduct__imagesSleder__slide">
+                                        <img class="dayProduct__img" src="img/04EDA19C9767F7100CFFDE5D049E 1.png">
+                                    </div>
+                                    <div class="swiper-slide dayProduct__imagesSleder__slide">
+                                        <img class="dayProduct__img" src="img/04EDA19C9767F7100CFFDE5D049E 1.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next dayProduct__imagesSleder__next dayProduct__imagesSleder__next1"></div>
+                            <div class="swiper-button-prev dayProduct__imagesSleder__prev dayProduct__imagesSleder__prev1"></div>
+                          
+                        </div>
+                        <div class="dayProduct__right">
+                            <div class="dayProduct__rating">
+                                <div class="dayProduct__rating__body">
+                                    <div class="dayProduct__rating__active"></div>
+                                    <div class="dayProduct__rating__items">
+                                        <input type="radio" class="dayProduct__rating__item" value="1" name="rating">
+                                        <input type="radio" class="dayProduct__rating__item" value="2" name="rating">
+                                        <input type="radio" class="dayProduct__rating__item" value="3" name="rating">
+                                        <input type="radio" class="dayProduct__rating__item" value="4" name="rating">
+                                        <input type="radio" class="dayProduct__rating__item" value="5" name="rating">
+                                    </div>
+                                </div>
+                                <div class="dayProduct__rating__value"> 4.2</div>
+                            </div>
+                            <h3 class="dayProduct__hiading3 hiading3">Кольцо из золота с бриллиантами </h3>
+                            <p class="dayProduct__articl">Артикул: 1012076 </p>
+                            <div class="dayProduct__sale">
+                                <div class="dayProduct__price">
+                                    <p class="dayProduct__price__now">22 000 ₽</p>
+                                    <p class="dayProduct__price__old">22 000 ₽</p>
+                                    <p class="dayProduct__price__despont">-45%</p>
+                                </div>
+                                <div class="dayProduct__timer"></div>
+                            </div>
+                            <div class="dayProduct__color">
+                                <p class="dayProduct__color__text">цвет</p>
+                                <div class="dayProduct__color__circle">
+                                    <img class="dayProduct__color__svg1" src="img/Ellipse 37.svg">
+                                    <img class="dayProduct__color__svg2" src="img/Ellipse 37.svg">
+                                    <img class="dayProduct__color__svg3" src="img/Ellipse 37.svg">
+                                    <img class="dayProduct__color__svg4" src="img/Ellipse 37.svg">
+                                </div>
+                            </div>
+                            <div class="dayProduct__size">
+                                <div class="dayProduct__size__hiading">
+                                    <p class="dayProduct__size__text"> Размер</p>
+                                    <p class="dayProduct__size__question">?</p>
+                                </div>
+                                <div class="dayProduct__size__content dayProduct__size__content1"> 
+                                    <a class="dayProduct__size__size dayProduct__size__size_active"> 16,5</a>
+                                    <a class="dayProduct__size__size"> 17,5</a>
+                                    <a class="dayProduct__size__size"> 18,5</a>
+                                    <a class="dayProduct__size__size"> 19</a>
+                                    <a class="dayProduct__size__size"> 19,5</a>
+                                    <a class="dayProduct__size__size"> 19,5</a>
+                                    <a class="dayProduct__size__size"> 18,5</a>
+                                    <a class="dayProduct__size__size"> 19</a>
+                                    <a class="dayProduct__size__size dayProduct__size__size__notActive"> 19,5</a>
+                                    <a class="dayProduct__size__size dayProduct__size__size__notActive"> 19,5</a>
+                                </div>
+                            </div>
+                            <div class="dayProduct__bottons">
+                                <div class="dayProduct__bottons__botton">
+                                    <a href="#" class="dayProduct__botton">в корзину</a>
+                                    <a href="#" class="dayProduct__botton">купить в 1 клик</a>
+                                </div>
+                                <div class="dayProduct__bottons__icons">
+                                    <div class="dayProduct__icons__item dayProduct__icons__item_chosen">
+                                        <img class="dayProduct__chosen__svg" src="/img/coolicon.svg">
+                                        <p class="dayProduct__item__text dayProduct__icons__text_chosen">Сохранить</p>
+                                    </div>
+                                    <div class="dayProduct__icons__item dayProduct__icons__item_stat">
+                                        <img class="dayProduct__stat__svg" src="img/chart (1).svg">
+                                        <p class="dayProduct__item__text dayProduct__icons__text_stat">Сравнить</p>
+                                    </div>
+                                    <div class="dayProduct__icons__item dayProduct__icons__item_share">
+                                        <img class="dayProduct__share__svg" src="img/Vector (Stroke).svg">
+                                        <p class="dayProduct__item__text dayProduct__icons__item_share"> Поделиться</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide dayProduct__slide">
+                        <div class="dayProduct__left">
+                            <div class="dayProduct__icon">
+                                <p class="dayProduct__new">New</p>
+                                <p class="dayProduct__hit">Хит</p>
+                                <p class="dayProduct__sale__icon">Sale</p>
+                            </div>
+                            <div class="dayProduct__imagesSlider swiper dayProduct__imagesSlider2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide dayProduct__imagesSleder__slide">
+                                        <img class="dayProduct__img" src="img/04EDA19C9767F7100CFFDE5D049E 1.png">
+                                    </div>
+                                    <div class="swiper-slide dayProduct__imagesSleder__slide">
+                                        <img class="dayProduct__img" src="img/04EDA19C9767F7100CFFDE5D049E 1.png">
+                                    </div>
+                                    <div class="swiper-slide dayProduct__imagesSleder__slide">
+                                        <img class="dayProduct__img" src="img/04EDA19C9767F7100CFFDE5D049E 1.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next dayProduct__imagesSleder__next dayProduct__imagesSleder__next2"></div>
+                            <div class="swiper-button-prev dayProduct__imagesSleder__prev dayProduct__imagesSleder__prev2"></div>
+                          
+                        </div>
+                        <div class="dayProduct__right">
+                            <div class="dayProduct__rating">
+                                <div class="dayProduct__rating__body">
+                                    <div class="dayProduct__rating__active"></div>
+                                    <div class="dayProduct__rating__items">
+                                        <input type="radio" class="dayProduct__rating__item" value="1" name="rating">
+                                        <input type="radio" class="dayProduct__rating__item" value="2" name="rating">
+                                        <input type="radio" class="dayProduct__rating__item" value="3" name="rating">
+                                        <input type="radio" class="dayProduct__rating__item" value="4" name="rating">
+                                        <input type="radio" class="dayProduct__rating__item" value="5" name="rating">
+                                    </div>
+                                </div>
+                                <div class="dayProduct__rating__value"> 4.2</div>
+                            </div>
+                            <h3 class="dayProduct__hiading3 hiading3">Кольцо из золота с бриллиантами </h3>
+                            <p class="dayProduct__articl">Артикул: 1012076 </p>
+                            <div class="dayProduct__sale">
+                                <div class="dayProduct__price">
+                                    <p class="dayProduct__price__now">22 000 ₽</p>
+                                    <p class="dayProduct__price__old">22 000 ₽</p>
+                                    <p class="dayProduct__price__despont">-45%</p>
+                                </div>
+                                <div class="dayProduct__timer"></div>
+                            </div>
+                            <div class="dayProduct__color">
+                                <p class="dayProduct__color__text">цвет</p>
+                                <div class="dayProduct__color__circle">
+                                    <img class="dayProduct__color__svg1" src="img/Ellipse 37.svg">
+                                    <img class="dayProduct__color__svg2" src="img/Ellipse 37.svg">
+                                    <img class="dayProduct__color__svg3" src="img/Ellipse 37.svg">
+                                    <img class="dayProduct__color__svg4" src="img/Ellipse 37.svg">
+                                </div>
+                            </div>
+                            <div class="dayProduct__size">
+                                <div class="dayProduct__size__hiading">
+                                    <p class="dayProduct__size__text"> Размер</p>
+                                    <p class="dayProduct__size__question">?</p>
+                                </div>
+                                <div class="dayProduct__size__content dayProduct__size__content2"> 
+                                    <a class="dayProduct__size__size dayProduct__size__size_active"> 16,5</a>
+                                    <a class="dayProduct__size__size"> 17,5</a>
+                                    <a class="dayProduct__size__size"> 18,5</a>
+                                    <a class="dayProduct__size__size"> 19</a>
+                                    <a class="dayProduct__size__size"> 19,5</a>
+                                    <a class="dayProduct__size__size"> 19,5</a>
+                                    <a class="dayProduct__size__size"> 18,5</a>
+                                    <a class="dayProduct__size__size"> 19</a>
+                                    <a class="dayProduct__size__size dayProduct__size__size__notActive"> 19,5</a>
+                                    <a class="dayProduct__size__size dayProduct__size__size__notActive"> 19,5</a>
+                                </div>
+                            </div>
+                            <div class="dayProduct__bottons">
+                                <div class="dayProduct__bottons__botton">
+                                    <a href="#" class="dayProduct__botton">в корзину</a>
+                                    <a href="#" class="dayProduct__botton">купить в 1 клик</a>
+                                </div>
+                                <div class="dayProduct__bottons__icons">
+                                    <div class="dayProduct__icons__item dayProduct__icons__item_chosen">
+                                        <img class="dayProduct__chosen__svg" src="/img/coolicon.svg">
+                                        <p class="dayProduct__item__text dayProduct__icons__text_chosen">Сохранить</p>
+                                    </div>
+                                    <div class="dayProduct__icons__item dayProduct__icons__item_stat">
+                                        <img class="dayProduct__stat__svg" src="img/chart (1).svg">
+                                        <p class="dayProduct__item__text dayProduct__icons__text_stat">Сравнить</p>
+                                    </div>
+                                    <div class="dayProduct__icons__item dayProduct__icons__item_share">
+                                        <img class="dayProduct__share__svg" src="img/Vector (Stroke).svg">
+                                        <p class="dayProduct__item__text dayProduct__icons__item_share"> Поделиться</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide dayProduct__slide">
+                        <div class="dayProduct__left">
+                            <div class="dayProduct__icon">
+                                <p class="dayProduct__new">New</p>
+                                <p class="dayProduct__hit">Хит</p>
+                                <p class="dayProduct__sale__icon">Sale</p>
+                            </div>
+                            <div class="dayProduct__imagesSlider swiper dayProduct__imagesSlider3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide dayProduct__imagesSleder__slide">
+                                        <img class="dayProduct__img" src="img/04EDA19C9767F7100CFFDE5D049E 1.png">
+                                    </div>
+                                    <div class="swiper-slide dayProduct__imagesSleder__slide">
+                                        <img class="dayProduct__img" src="img/04EDA19C9767F7100CFFDE5D049E 1.png">
+                                    </div>
+                                    <div class="swiper-slide dayProduct__imagesSleder__slide">
+                                        <img class="dayProduct__img" src="img/04EDA19C9767F7100CFFDE5D049E 1.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next dayProduct__imagesSleder__next dayProduct__imagesSleder__next3"></div>
+                            <div class="swiper-button-prev dayProduct__imagesSleder__prev dayProduct__imagesSleder__prev3"></div>
+                          
+                        </div>
+                        <div class="dayProduct__right">
+                            <div class="dayProduct__rating">
+                                <div class="dayProduct__rating__body">
+                                    <div class="dayProduct__rating__active"></div>
+                                    <div class="dayProduct__rating__items">
+                                        <input type="radio" class="dayProduct__rating__item" value="1" name="rating">
+                                        <input type="radio" class="dayProduct__rating__item" value="2" name="rating">
+                                        <input type="radio" class="dayProduct__rating__item" value="3" name="rating">
+                                        <input type="radio" class="dayProduct__rating__item" value="4" name="rating">
+                                        <input type="radio" class="dayProduct__rating__item" value="5" name="rating">
+                                    </div>
+                                </div>
+                                <div class="dayProduct__rating__value"> 4.2</div>
+                            </div>
+                            <h3 class="dayProduct__hiading3 hiading3">Кольцо из золота с бриллиантами </h3>
+                            <p class="dayProduct__articl">Артикул: 1012076 </p>
+                            <div class="dayProduct__sale">
+                                <div class="dayProduct__price">
+                                    <p class="dayProduct__price__now">22 000 ₽</p>
+                                    <p class="dayProduct__price__old">22 000 ₽</p>
+                                    <p class="dayProduct__price__despont">-45%</p>
+                                </div>
+                                <div class="dayProduct__timer"></div>
+                            </div>
+                            <div class="dayProduct__color">
+                                <p class="dayProduct__color__text">цвет</p>
+                                <div class="dayProduct__color__circle">
+                                    <img class="dayProduct__color__svg1" src="img/Ellipse 37.svg">
+                                    <img class="dayProduct__color__svg2" src="img/Ellipse 37.svg">
+                                    <img class="dayProduct__color__svg3" src="img/Ellipse 37.svg">
+                                    <img class="dayProduct__color__svg4" src="img/Ellipse 37.svg">
+                                </div>
+                            </div>
+                            <div class="dayProduct__size">
+                                <div class="dayProduct__size__hiading">
+                                    <p class="dayProduct__size__text"> Размер</p>
+                                    <p class="dayProduct__size__question">?</p>
+                                </div>
+                                <div class="dayProduct__size__content dayProduct__size__content3"> 
+                                    <a  class="dayProduct__size__size dayProduct__size__size_active"> 16,5</a>
+                                    <a  class="dayProduct__size__size"> 17,5</a>
+                                    <a  class="dayProduct__size__size"> 18,5</a>
+                                    <a  class="dayProduct__size__size"> 19</a>
+                                    <a  class="dayProduct__size__size"> 19,5</a>
+                                    <a  class="dayProduct__size__size"> 19,5</a>
+                                    <a  class="dayProduct__size__size"> 18,5</a>
+                                    <a  class="dayProduct__size__size"> 19</a>
+                                    <a  class="dayProduct__size__size dayProduct__size__size__notActive"> 19,5</a>
+                                    <a  class="dayProduct__size__size dayProduct__size__size__notActive"> 19,5</a>
+                                </div>
+                            </div>
+                            <div class="dayProduct__bottons">
+                                <div class="dayProduct__bottons__botton">
+                                    <a href="#" class="dayProduct__botton">в корзину</a>
+                                    <a href="#" class="dayProduct__botton">купить в 1 клик</a>
+                                </div>
+                                <div class="dayProduct__bottons__icons">
+                                    <div class="dayProduct__icons__item dayProduct__icons__item_chosen">
+                                        <img class="dayProduct__chosen__svg" src="/img/coolicon.svg">
+                                        <p class="dayProduct__item__text dayProduct__icons__text_chosen">Сохранить</p>
+                                    </div>
+                                    <div class="dayProduct__icons__item dayProduct__icons__item_stat">
+                                        <img class="dayProduct__stat__svg" src="img/chart (1).svg">
+                                        <p class="dayProduct__item__text dayProduct__icons__text_stat">Сравнить</p>
+                                    </div>
+                                    <div class="dayProduct__icons__item dayProduct__icons__item_share">
+                                        <img class="dayProduct__share__svg" src="img/Vector (Stroke).svg">
+                                        <p class="dayProduct__item__text dayProduct__icons__item_share"> Поделиться</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--article-->
+    <section class="article">
+        <div class="container">
+            <div class="article__hiading">
+                <h2 class="article__hiading2 hiading2">Статьи</h2>
+                <div class="article__navigation">
+                    <a href="#" class="article__navigation__text">Читать все</a>
+                    <img class="article__navigation__svg" src="img/Arrow 2.svg">
+                </div>
+            </div>
+            <div class="article__content">
+                <div class="article__cart">
+                    <img class="article__img" src="img/mathilde-langevin-f1FkoppimsA-unsplash 1.png">
+                    <p class="article__description">21 сентября 2021</p>
+                    <p class="article__text">Обручальные кольца: тренды 2021</p>
+                </div>
+                <div class="article__cart">
+                    <img class="article__img" src="img/raphael-lovaski-guiVHikFkvQ-unsplash 1.png">
+                    <p class="article__description">25 сентября 2021</p>
+                    <p class="article__text">Главные ювелирные тренды года</p>
+                </div>
+                <div class="article__cart">
+                    <img class="article__img" src="img/fiona-murray-KE95wIwKp4Y-unsplash 1.png">
+                    <p class="article__description">21 сентября 2021</p>
+                    <p class="article__text">Жемчуг: 7 малоизвестных фактов о культовом украшении</p>
+                </div>
+                <div class="article__cart">
+                    <img class="article__img" src="img/anastasia-anastasia-nlQFycTD04M-unsplash 1.png">
+                    <p class="article__description">21 сентября 2021</p>
+                    <p class="article__text">Как отличить золото от подделки: 10 практических советов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>
